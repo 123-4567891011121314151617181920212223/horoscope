@@ -56,6 +56,7 @@ class HoroskopActivity : AppCompatActivity() {
         try {
             val liste = resp.split("\"")
 
+            findViewById<TextView>(R.id.dateRange).text = liste[3]
 
             findViewById<TextView>(R.id.currentDate).text = liste[7]
 
